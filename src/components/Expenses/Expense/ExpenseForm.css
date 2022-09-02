@@ -1,0 +1,15 @@
+form {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.expense_form {
+  margin: 20px;
+}
+
+.expense_form__item {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}

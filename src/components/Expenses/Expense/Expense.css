@@ -1,0 +1,14 @@
+.expense {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+}
+
+.expense__item {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
