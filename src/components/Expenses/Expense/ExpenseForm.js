@@ -28,6 +28,11 @@ const ExpenseForm = (props) => {
     };
     console.log(expense);
     props.onAddExpense(expense);
+
+    // Reset form value
+    setTitle('');
+    setPrice('');
+    setDateTime('');
   };
 
   return (
@@ -38,6 +43,7 @@ const ExpenseForm = (props) => {
           <label className="expense_form__label">Title: </label>
           <input
             type="text"
+            value={title}
             className="expense_form__input"
             onChange={onChangeTitleHandler}
           />
@@ -46,6 +52,7 @@ const ExpenseForm = (props) => {
           <label className="expense_form__label">Price: </label>
           <input
             type="number"
+            value={price}
             className="expense_form__input"
             onChange={onChangePriceHandler}
           />
@@ -54,6 +61,7 @@ const ExpenseForm = (props) => {
           <label className="expense_form__label">DateTime: </label>
           <input
             type="date"
+            value={dateTime}
             className="expense_form__input"
             onChange={onChangeDateTimeHandler}
           />
