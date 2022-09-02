@@ -10,9 +10,9 @@ const Expenses = () => {
   ];
   return (
     <div className="expenses">
-      <Expense expense={expenses[0]} />
-      <Expense expense={expenses[1]} />
-      <Expense expense={expenses[2]} />
+      {expenses.map((expense) => (
+        <Expense expense={expense} />
+      ))}
     </div>
   );
 };
