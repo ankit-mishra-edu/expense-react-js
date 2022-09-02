@@ -1,5 +1,6 @@
 import React from 'react';
 import Expense from './Expense/Expense';
+import './Expenses.css';
 
 const Expenses = () => {
   const expenses = [
@@ -8,7 +9,7 @@ const Expenses = () => {
     { title: 'Expense - 3', price: 3, dateTime: new Date() },
   ];
   return (
-    <div>
+    <div className="expenses">
       <Expense expense={expenses[0]} />
       <Expense expense={expenses[1]} />
       <Expense expense={expenses[2]} />
