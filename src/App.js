@@ -20,7 +20,9 @@ export default function App() {
 
   return (
     <div>
-      <ExpenseForm onAddExpense={onAddExpenseHandler} />
+      <ExpenseForm onAddExpense={onAddExpenseHandler}>
+        Add Your Expense
+      </ExpenseForm>
       <Expenses expenses={expenses} />
     </div>
   );

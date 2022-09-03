@@ -37,7 +37,7 @@ const ExpenseForm = (props) => {
 
   return (
     <form onSubmit={onSubmitFormHandler}>
-      <legend>Add Your Expense</legend>
+      <legend>{props.children}</legend>
       <div className="expense_form">
         <div className="expense_form__item">
           <label className="expense_form__label">Title: </label>
