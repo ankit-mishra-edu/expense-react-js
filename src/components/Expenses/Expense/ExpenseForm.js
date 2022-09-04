@@ -39,16 +39,19 @@ const ExpenseForm = (props) => {
       <div className="expense_form">
         <FormInput
           type="text"
+          label="Title"
           onInputValueChange={setTitle}
           isFormSubmitted={isFormSubmitted}
         />
         <FormInput
           type="number"
+          label="Price"
           onInputValueChange={setPrice}
           isFormSubmitted={isFormSubmitted}
         />
         <FormInput
           type="date"
+          label="Date of Expense"
           onInputValueChange={setDateTime}
           isFormSubmitted={isFormSubmitted}
         />

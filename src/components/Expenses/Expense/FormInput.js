@@ -15,7 +15,7 @@ const FormInput = (props) => {
         props.isFormSubmitted && inputValue.length === 0 ? 'invalid' : ''
       }`}
     >
-      <label className="expense_form__label">Title: </label>
+      <label className="expense_form__label">{props.label}: </label>
       <input
         type={props.type}
         value={inputValue}
