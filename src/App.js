@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 
 import Expenses from './components/Expenses/Expenses';
-import ExpenseForm from './components/Expenses/Expense/ExpenseForm';
+import ExpenseForm from './components/ExpenseForm/ExpenseForm';
 
 export default function App() {
   const initialExpenses = [
