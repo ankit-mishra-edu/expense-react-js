@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ExpenseForm.css';
 
-import FormInput from './FormInput';
+import FormControl from './FormInput';
 
 const ExpenseForm = (props) => {
   const [title, setTitle] = useState('');
@@ -37,19 +37,19 @@ const ExpenseForm = (props) => {
     <form onSubmit={onSubmitFormHandler}>
       <legend>{props.children}</legend>
       <div className="expense_form">
-        <FormInput
+        <FormControl
           type="text"
           label="Title"
           onInputValueChange={setTitle}
           isFormSubmitted={isFormSubmitted}
         />
-        <FormInput
+        <FormControl
           type="number"
           label="Price"
           onInputValueChange={setPrice}
           isFormSubmitted={isFormSubmitted}
         />
-        <FormInput
+        <FormControl
           type="date"
           label="Date of Expense"
           onInputValueChange={setDateTime}

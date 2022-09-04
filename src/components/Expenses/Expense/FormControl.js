@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './FormInput.css';
+import './FormControl.css';
 
-const FormInput = (props) => {
+const FormControl = (props) => {
   const [inputValue, setInputValue] = useState('');
 
   const onInputValueChangeHandler = (event) => {
@@ -26,4 +26,4 @@ const FormInput = (props) => {
   );
 };
 
-export default FormInput;
+export default FormControl;
