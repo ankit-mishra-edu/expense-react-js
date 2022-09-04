@@ -34,9 +34,9 @@ const ExpenseForm = (props) => {
   };
 
   return (
-    <form onSubmit={onSubmitFormHandler}>
-      <legend>{props.children}</legend>
-      <div className="expense_form">
+    <div className="expense_form">
+      <form onSubmit={onSubmitFormHandler}>
+        <legend>{props.children}</legend>
         <FormControl
           type="text"
           label="Title"
@@ -60,8 +60,8 @@ const ExpenseForm = (props) => {
             Add Expense
           </button>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
 export default ExpenseForm;
