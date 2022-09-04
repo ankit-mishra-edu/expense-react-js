@@ -11,15 +11,15 @@ const FormControl = (props) => {
 
   return (
     <div
-      className={`expense_form__item ${
+      className={`form-group ${
         props.isFormSubmitted && inputValue.length === 0 ? 'invalid' : ''
       }`}
     >
-      <label className="expense_form__label">{props.label}: </label>
+      <label className="form-label">{props.label}: </label>
       <input
         type={props.type}
         value={inputValue}
-        className="expense_form__input"
+        className="form-control"
         onChange={onInputValueChangeHandler}
       />
     </div>

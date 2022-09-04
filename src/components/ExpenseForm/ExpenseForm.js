@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './ExpenseForm.css';
 
 import FormControl from '../UI/FormControl/FormControl';
+import Button from '../UI/Button/Button';
 
 const ExpenseForm = (props) => {
   const [title, setTitle] = useState('');
@@ -55,11 +56,7 @@ const ExpenseForm = (props) => {
           onInputValueChange={setDateTime}
           isFormSubmitted={isFormSubmitted}
         />
-        <div className="expense_form__item">
-          <button type="submit" className="expense_form__submit_button">
-            Add Expense
-          </button>
-        </div>
+        <Button />
       </form>
     </div>
   );

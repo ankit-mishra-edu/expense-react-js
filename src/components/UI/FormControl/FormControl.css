@@ -1,20 +1,20 @@
-.expense_form__item {
+.form-group {
   margin: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.expense_form__input {
+.form-control {
   margin: 0.5rem 0;
 }
 
-.expense_form__label {
+.form-label {
   font-weight: bold;
   display: block;
   margin-bottom: 0.5rem;
 }
 
-.expense_form__input {
+.form-control {
   display: block;
   width: 100%;
   border: 1px solid #ccc;
@@ -23,17 +23,17 @@
   padding: 0 0.25rem;
 }
 
-.expense_form__input:focus {
+.form-control:focus {
   outline: none;
   background: #fad0ec;
   border-color: #8b005d;
 }
 
-.expense_form__item.invalid .expense_form__input {
+.form-group.invalid .form-control {
   border-color: red;
   background: #ffd7d7;
 }
 
-.expense_form__item.invalid .expense_form__label {
+.form-group.invalid .form-label {
   color: red;
 }
