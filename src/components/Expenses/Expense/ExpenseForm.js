@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ExpenseForm.css';
 
-import FormControl from './FormInput';
+import FormControl from './FormControl';
 
 const ExpenseForm = (props) => {
   const [title, setTitle] = useState('');
