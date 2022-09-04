@@ -12,9 +12,3 @@ legend {
 .expense_form {
   margin: 20px;
 }
-
-.expense_form__item {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
